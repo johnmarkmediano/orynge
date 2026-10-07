@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Princess Anasyl Y. Pama — social-media manager, marketing assistant, content strategist, video/photo editor, and digital creative assistant.">
+<meta name="theme-color" content="#171614" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F0E8" media="(prefers-color-scheme: light)">
+<meta name="robots" content="index, follow">
+<title>ORYNGE | Social Media Management & Creative Services Princess Anasyl Y. Pama</title>
+<link rel="preload" as="style" href="styles.css">
+<link rel="stylesheet" href="styles.css">
+<meta name="view-transition" content="same-origin">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7300'/%3E%3Ctext x='50' y='68' font-family='sans-serif' font-size='58' fill='%23171614' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7300'/%3E%3Ctext x='50' y='68' font-family='sans-serif' font-size='58' fill='%23171614' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ORYNGE | Princess Anasyl Y. Pama">
+<meta property="og:description" content="Social-media management, marketing support, content strategy, and creative production for growing brands.">
+<meta property="og:url" content="/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ORYNGE | Princess Anasyl Y. Pama">
+<meta name="twitter:description" content="Social-media management, marketing support, content strategy, and creative production for growing brands.">
+<meta property="og:image" content="image/4.jpg">
+<meta name="twitter:image" content="image/4.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Princess Anasyl Y. Pama",
+  "jobTitle": "Social Media Manager, Marketing Assistant, Video/Photo Editor, and Creative Assistant",
+  "url": "/",
+  "knowsAbout": ["Social media management", "Marketing support", "Content strategy", "Photo and video editing", "Content planning", "Visual design"],
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PH",
+      "addressLocality": "Philippines"
+    }
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "mailto:orynge.ph@gmail.com",
+    "availableLanguage": "English"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Social Media Manager & Marketing Assistant",
+    "occupationalCategory": "27-3031.00"
+  }
+}
+</script>
+</head>
+<body data-page="home">
+
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="page-transition" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Page scroll progress"></div>
+
+<!-- Copy toast -->
+<div class="copy-toast" id="copyToast" aria-live="polite" aria-atomic="true"></div>
+
+<!-- Easter egg notification -->
+<div class="easter-egg" id="easterEgg" aria-live="polite" aria-atomic="true"></div>
+
+<header role="banner">
+  <div class="brand" aria-label="ORYNGE">
+    <div class="brand-mark" aria-hidden="true"><span>O</span></div>
+    <div class="brand-text">
+      <span class="name">ORYNGE</span>
+      <span class="role">DIGITAL CREATIVE SERVICES</span>
+    </div>
+  </div>
+
+  <nav class="links" id="navLinks" role="navigation" aria-label="Main navigation">
+    <button class="magnetic active" data-page="home" aria-current="page">Home</button>
+    <button class="magnetic" data-page="about">About</button>
+    <button class="magnetic" data-page="services">Services</button>
+    <button class="magnetic" data-page="skills">Skills</button>
+    <button class="magnetic" data-page="portfolio">Portfolio</button>
+    <button class="magnetic" data-page="contact">Contact</button>
+  </nav>
+
+  <div class="header-actions">
+    <button class="hire-btn magnetic" onclick="goTo('contact')" aria-label="Contact ORYNGE">Hire</button>
+    <button class="theme-toggle magnetic" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+      <svg class="theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      <svg class="theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.2 15.2A8.4 8.4 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg>
+    </button>
+    <button class="burger magnetic" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+  <div class="mobile-menu-header">
+    <button class="theme-toggle magnetic" id="mobileThemeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+      <svg class="theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      <svg class="theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.2 15.2A8.4 8.4 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg>
+    </button>
+  </div>
+  <button class="nav-btn active" data-page="home" aria-current="page">Home</button>
+  <button class="nav-btn" data-page="about">About</button>
+  <button class="nav-btn" data-page="services">Services</button>
+  <button class="nav-btn" data-page="skills">Skills</button>
+  <button class="nav-btn" data-page="portfolio">Portfolio</button>
+  <button class="nav-btn" data-page="contact">Contact</button>
+</nav>
+
+<main role="main">
+
+  <!-- HOME -->
+  <section class="page active" id="home" aria-labelledby="home-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> SOCIAL MEDIA & MARKETING SUPPORT</div>
+        <h1 class="hero" id="home-title">ORYNGE</h1>
+        <div class="service-includes">
+          <div class="service-includes-label"><span class="rule" aria-hidden="true"></span> SERVICES INCLUDE:</div>
+          <div class="typewrap"><b id="typeTarget">&nbsp;</b><span class="cursor-blink" aria-hidden="true"></span></div>
+        </div>
+        <p class="hero-desc">ORYNGE helps founders, creators, and growing brands plan, manage, and improve their social-media presence with clear content systems, polished visuals, and marketing support that feels intentional.</p>
+        <div class="btn-row">
+          <button class="btn-primary" onclick="goTo('contact')">Hire</button>
+          <button class="btn-ghost" onclick="goTo('services')">Explore Services</button>
+        </div>
+      </div>
+
+      <div class="hero-logo">
+        <img src="image/4.jpg" alt="ORYNGE brand emblem" width="2000" height="2000" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="page" id="about" aria-labelledby="about-title">
+    <h2 class="title" id="about-title">Who Is ORYNGE?</h2>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>ORYNGE is a digital creative studio built for people who need their online presence to feel organized, trustworthy, and memorable.</p>
+        <p>Behind ORYNGE is Princess Anasyl Y. Pama, a social-media and marketing assistant who helps brands and creators turn scattered ideas into content that is clearer, more consistent, and ready to publish.</p>
+        <p>I combine <span class="accent">social-media management</span>, <span class="accent">marketing support</span>, and <span class="accent">visual editing</span> to help ideas become content that feels polished and ready to share.</p>
+        <p>Every piece of work is shaped around clarity, consistency, and a stronger connection with the audience because good creative work should look intentional and move people to act.</p>
+        <div class="tag-row" role="list" aria-label="Profile tags">
+          <div class="tag" role="listitem"><span class="tag-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 20 5-1 10-10-4-4L5 15l-1 5Z"/><path d="m13.5 6.5 4 4"/></svg></span>Social-media marketer</div>
+          <div class="tag" role="listitem"><span class="tag-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></svg></span>Content strategist</div>
+          <div class="tag" role="listitem"><span class="tag-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg></span>Creative assistant</div>
+          <div class="tag" role="listitem"><span class="tag-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>South Cotabato</div>
+        </div>
+      </div>
+      <div class="about-side">
+        <figure class="profile-card">
+          <img src="image/13.jpg" alt="Professional profile photo of Princess Anasyl Y. Pama" loading="lazy" decoding="async">
+          <figcaption>
+            <span>Princess Anasyl Y. Pama</span>
+            <b>Social Media & Marketing Assistant</b>
+          </figcaption>
+        </figure>
+        <aside class="process-card" aria-labelledby="process-title">
+          <span class="process-kicker">A CLEARER WAY TO WORK</span>
+          <h3 id="process-title">From rough idea to ready-to-share.</h3>
+          <ol class="process-list">
+            <li><span>01</span><div><strong>Audit</strong><p>I review what is working, what feels unclear, and where your content can improve.</p></div></li>
+            <li><span>02</span><div><strong>Plan</strong><p>We shape content themes, visuals, captions, and posting priorities around your audience.</p></div></li>
+            <li><span>03</span><div><strong>Publish</strong><p>You receive organized, polished support for content that is ready to go live.</p></div></li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="page" id="services" aria-labelledby="services-title">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> WHAT I DO</div>
+      <h2 class="title" id="services-title">Services</h2>
+      <p>Social-media and marketing services built to make your online presence easier to manage, easier to trust, and easier to act on.</p>
+    </div>
+    <div class="services-grid" role="list" aria-label="Services offered">
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8 10h8M8 14h8M8 18h5"/></svg></div>
+        <h3>Digital Assistance</h3>
+        <p>Organized systems for busy creators and businesses so campaign notes, content files, research, and communication stay clear and easy to manage.</p>
+        <ul class="svc-list">
+          <li>Research and planning support</li>
+          <li>File and information systems</li>
+          <li>Email and admin coordination</li>
+          <li>Reliable day-to-day operations</li>
+        </ul>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.5-3.6M8.2 13.2l7.5 3.6"/></svg></div>
+        <h3>Social Media Management</h3>
+        <p>Content systems that help brands stay visible, consistent, and memorable online without the chaos of doing it all alone.</p>
+        <ul class="svc-list">
+          <li>Content calendars and posting plans</li>
+          <li>Profile and page optimization</li>
+          <li>Captions, hashtags, and post support</li>
+          <li>Engagement and growth recommendations</li>
+        </ul>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="m10 9 5 3-5 3V9Z"/></svg></div>
+        <h3>Photo &amp; Video Editing</h3>
+        <p>Polished visuals for brands, stories, campaigns, and social content that need a cleaner look and stronger engagement.</p>
+        <ul class="svc-list">
+          <li>Retouching and enhancement</li>
+          <li>Short-form video edits</li>
+          <li>Reels and social-ready cuts</li>
+          <li>Platform-optimized exports</li>
+        </ul>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"/></svg></div>
+        <h3>Creative Support</h3>
+        <p>Creative execution that turns rough ideas into clear, compelling marketing assets ready to publish, present, and grow your presence.</p>
+        <ul class="svc-list">
+          <li>Brainstorming and content direction</li>
+          <li>Visual asset preparation</li>
+          <li>Creative task coordination</li>
+          <li>Quality checks before delivery</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="page" id="skills" aria-labelledby="skills-title">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> TOOLBOX</div>
+      <h2 class="title" id="skills-title">Skills</h2>
+      <p>Creative, production, and administrative support for the full content cycle.</p>
+    </div>
+    <div class="skills-grid" id="skillsGrid">
+      <article class="skill-group">
+        <span class="skill-number" aria-hidden="true">01</span>
+        <h3>Content Strategy &amp; Visual Design</h3>
+        <p>Planning content systems, writing captions, building visual concepts, and shaping brand aesthetics using Canva, Ibis Paint X, and Lightroom.</p>
+      </article>
+      <article class="skill-group">
+        <span class="skill-number" aria-hidden="true">02</span>
+        <h3>Video Editing &amp; Production</h3>
+        <p>Short-form editing, reels, event recap cuts, and fast-turn content production tailored for digital audiences and social platforms.</p>
+      </article>
+      <article class="skill-group">
+        <span class="skill-number" aria-hidden="true">03</span>
+        <h3>Social Media Management</h3>
+        <p>Scheduling, profile optimization, audience engagement, and consistent channel support through Meta Business Suite and content planning workflows.</p>
+      </article>
+      <article class="skill-group">
+        <span class="skill-number" aria-hidden="true">04</span>
+        <h3>Administrative &amp; Marketing Support</h3>
+        <p>Research, content coordination, digital organization, and task support that keeps projects moving without losing momentum.</p>
+      </article>
+      <article class="skill-group">
+        <span class="skill-number" aria-hidden="true">05</span>
+        <h3>Short-Form Storytelling</h3>
+        <p>Crafting short videos that capture emotion, movement, and identityâ€”ideal for content that wants to feel alive and memorable.</p>
+      </article>
+      <article class="skill-group">
+        <span class="skill-number" aria-hidden="true">06</span>
+        <h3>Content Planning Systems</h3>
+        <p>Structured content calendars and publishing rhythm that help brands stay visible, relevant, and consistent with their audience.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="page" id="portfolio" aria-labelledby="portfolio-title">
+    <div class="section-head portfolio-head">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> STATISTICS & WORK SAMPLES</div>
+      <h2 class="title" id="portfolio-title">Social Media Portfolio</h2>
+      <p>A focused look at social-media reach, homepage presentation, and supporting creative work without crowding the main homepage.</p>
+    </div>
+
+    <div class="social-portfolio-grid">
+      <div class="portfolio-copy">
+        <span class="process-kicker">SOCIAL PROOF</span>
+        <h3>Content that looks organized and gives the audience a reason to stay.</h3>
+        <p>The Art Block homepage and insights show how ORYNGE presents creative services, tracks growth, and keeps visual work tied to measurable engagement.</p>
+
+        <div class="impact-stats" role="list" aria-label="Social media statistics">
+          <div class="impact-stat" role="listitem">
+            <b data-target="2200" data-compact="true">0</b>
+            <span>Facebook views</span>
+          </div>
+          <div class="impact-stat" role="listitem">
+            <b data-target="236" data-suffix="%">0</b>
+            <span>Views increase</span>
+          </div>
+          <div class="impact-stat" role="listitem">
+            <b data-target="196">0</b>
+            <span>Profile views</span>
+          </div>
+          <div class="impact-stat" role="listitem">
+            <b data-target="58">0</b>
+            <span>Interactions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="device-showcase" aria-label="Social media homepage and insights screenshots">
+        <figure class="phone-mockup phone-mockup--stacked">
+          <div class="phone-mockup__frame">
+            <div class="phone-mockup__dynamic-island" aria-hidden="true"></div>
+            <div class="phone-mockup__screen">
+              <div class="phone-feed" id="phoneFeed" tabindex="0" role="group" aria-label="Phone screen: Instagram Art Block homepage, then the Facebook profile photo below it">
+                <div class="phone-feed__panel">
+                  <span class="phone-feed__chip">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" stroke="none"/></svg>
+                    Instagram
+                  </span>
+                  <img src="image/1.jpg" alt="Instagram homepage screenshot for Art Block" loading="eager" decoding="async" fetchpriority="high">
+                </div>
+                <div class="phone-feed__panel phone-feed__panel--profile">
+                  <span class="phone-feed__chip">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    Facebook
+                  </span>
+                  <img src="image/14.jpg" alt="Facebook profile photo shown on the phone screen below the Instagram homepage" loading="lazy" decoding="async">
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="mockup-caption">Instagram Art Block homepage &amp; Facebook profile</figcaption>
+        </figure>
+
+        <figure class="browser-mockup browser-mockup--elevated">
+          <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="browser-mockup__screen">
+            <img src="image/6.jpg" alt="Facebook insights screenshot showing 2.2K views and a 236 percent increase" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Insight snapshot: 2.2K views, 236% growth, and 58 content interactions.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+<div class="portfolio-3d-carousel-section" aria-labelledby="carousel-works-title">
+      <div class="works-head">
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> ALL WORKS</div>
+        <h3 id="carousel-works-title">Selected Works &amp; Creative Outputs</h3>
+        <p>Swipe or drag to explore the full collection from social content and event graphics to video edits and brand identity.</p>
+      </div>
+      <div class="carousel-3d" id="portfolio3DCarousel" role="region" aria-label="3D portfolio carousel">
+        <div class="carousel-3d__viewport" id="carousel3DViewport">
+          <div class="carousel-3d__track" id="carousel3DTrack"></div>
+        </div>
+        <div class="carousel-3d__controls">
+          <button class="carousel-3d__arrow carousel-3d__arrow--prev" id="carousel3DPrev" type="button" aria-label="Previous work" title="Previous work">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-3d__pagination" id="carousel3DPagination" aria-label="Slide indicator"></div>
+          <button class="carousel-3d__arrow carousel-3d__arrow--next" id="carousel3DNext" type="button" aria-label="Next work" title="Next work">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="carousel-3d__caption" id="carousel3DCaption" aria-live="polite">
+          <span class="carousel-3d__kicker">SELECTED WORK</span>
+          <span class="carousel-3d__title" id="carousel3DTitle">ORYNGE logo</span>
+          <span class="carousel-3d__count" id="carousel3DCount" aria-hidden="true">01 / 09</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="videos-section" aria-labelledby="videos-title">
+      <div class="works-head">
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> VIDEO WORK</div>
+        <h3 id="videos-title">Videos</h3>
+        <p>Interactive 3D video reel arranged in one line — swipe, drag, or click to explore and play directly.</p>
+      </div>
+      <div class="video-carousel-3d" id="video3DCarousel" role="region" aria-label="3D video carousel">
+        <div class="video-carousel-3d__viewport" id="video3DViewport">
+          <div class="video-carousel-3d__track" id="video3DTrack"></div>
+        </div>
+        <div class="video-carousel-3d__controls">
+          <button class="carousel-3d__arrow video-carousel-3d__arrow--prev" id="video3DPrev" type="button" aria-label="Previous video" title="Previous video">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-3d__pagination" id="video3DPagination" aria-label="Video slide indicator"></div>
+          <button class="carousel-3d__arrow video-carousel-3d__arrow--next" id="video3DNext" type="button" aria-label="Next video" title="Next video">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="video-carousel-3d__caption" id="video3DCaption" aria-live="polite">
+          <span class="video-carousel-3d__kicker" id="video3DKicker">CITY EDIT</span>
+          <span class="video-carousel-3d__title" id="video3DTitle">17</span>
+          <span class="video-carousel-3d__count" id="video3DCount" aria-hidden="true">01 / 03</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications-section" aria-labelledby="certifications-title">
+      <div class="certifications-copy">
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> CREDENTIAL</div>
+        <h3 id="certifications-title">Certifications</h3>
+        <p>Certificate of Participation from DTI Philippines for the Digitalization Seminar for MSMEs: Content Creation for Business, held on July 22, 2026.</p>
+      </div>
+      <figure class="certificate-frame">
+        <img src="image/9.jpg" alt="DTI Philippines certificate of participation awarded to Princess Anasyl Pama" loading="lazy" decoding="async">
+      </figure>
+    </section>
+  </section>
+
+<!-- CONTACT -->
+  <section class="page" id="contact" aria-labelledby="contact-title">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> CONTACT / HIRE</div>
+      <h2 class="title" id="contact-title">Message</h2>
+      <p>Ask about social-media management, marketing support, content creation, or freelance projects.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="info-card">
+          <div class="info-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></div>
+          <div>
+            <label class="contact-label">EMAIL</label>
+            <div class="email-row">
+              <span class="val" id="emailVal">orynge.ph@gmail.com</span>
+              <button class="copy-email-btn" type="button" onclick="copyEmail()" aria-label="Copy email address" title="Copy to clipboard">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+            <a class="contact-fallback" href="mailto:orynge.ph@gmail.com">Open in email app</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-7-7l3-2-2-5Z"/></svg></div>
+          <div><label class="contact-label">PHONE</label><a class="val" href="tel:+639922751575">0992-275-1575</a></div>
+        </div>
+        <div class="info-card">
+          <div class="info-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><label class="contact-label">LOCATION</label><div class="val">South Cotabato, Philippines 9504</div></div>
+        </div>
+        <div class="info-card">
+          <div class="info-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><label class="contact-label">RESPONSE TIME</label><div class="val">Within 24 hours</div></div>
+        </div>
+
+        <div class="social-row" aria-label="Social profiles">
+          <a href="https://www.linkedin.com/in/orynge-ph-844328437" target="_blank" rel="noopener noreferrer" aria-label="Visit ORYNGE on LinkedIn" title="LinkedIn">
+            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <span class="social-label">LinkedIn</span>
+          </a>
+          <a href="https://www.tiktok.com/@orynge.ph?_r=1&_t=ZS-9AANGVUwCCv" target="_blank" rel="noopener noreferrer" aria-label="Visit ORYNGE on TikTok" title="TikTok">
+            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-3.14-1.73 2.73 2.73 0 0 1-.94-3.42 2.57 2.57 0 0 1 1.02-1.8 7.07 7.07 0 0 1 2.73-.75A8.978 8.978 0 0 0 12 3Z"/><path d="M18.43 15.55a2.57 2.57 0 0 1 1.02 1.8 2.73 2.73 0 0 1-.94 3.42 5.45 5.45 0 0 1-3.14 1.73 5.97 5.97 0 0 1-.25.92c-.06.46-.1.92-.1 1.36a9 9 0 0 0 3.31-8.13Z"/></svg></span>
+            <span class="social-label">TikTok</span>
+          </a>
+          <a href="https://www.facebook.com/share/1DbGTQUWhS/" target="_blank" rel="noopener noreferrer" aria-label="Visit ORYNGE on Facebook" title="Facebook">
+            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
+            <span class="social-label">Facebook</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="form-card">
+        <h3>Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <!-- Honeypot field for spam protection -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none;" aria-hidden="true">
+          
+          <div class="field-row">
+            <div class="field"><label for="fName">Name <span class="required" aria-hidden="true">*</span></label><input type="text" id="fName" name="name" required placeholder="Your Name" autocomplete="name"></div>
+            <div class="field"><label for="fEmail">Email <span class="required" aria-hidden="true">*</span></label><input type="email" id="fEmail" name="email" required placeholder="your@email.com" autocomplete="email"></div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="fReason">Reason</label>
+              <select id="fReason" name="reason">
+                <option value="project">Project inquiry</option>
+                <option value="social">Social media management</option>
+                <option value="freelance">Freelance project</option>
+                <option value="academic">Academic collaboration</option>
+                <option value="job">Job opportunity</option>
+                <option value="hi">Just saying hi</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fTimeline">Timeline</label>
+              <select id="fTimeline" name="timeline">
+                <option value="norush">No rush</option>
+                <option value="month">Within a month</option>
+                <option value="asap">ASAP</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fMessage">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="fMessage" name="message" required placeholder="Share your social profile link, goals, and what you want improved..." aria-describedby="message-help"></textarea>
+            <span id="message-help" class="sr-only">Describe your project, goals, and timeline</span>
+          </div>
+          <button type="submit" class="send-btn" id="sendBtn">
+            <span class="btn-text">Open in Email App</span>
+            <span class="btn-loader" aria-hidden="true"></span>
+          </button>
+          <div class="form-status" id="formStatus" aria-live="polite"></div>
+        </form>
+        <p class="form-note">This opens a prefilled draft in your default email app. Review and send from there.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<dialog class="media-viewer" id="mediaViewer" aria-labelledby="mediaViewerTitle">
+  <div class="media-viewer-shell">
+    <div class="media-viewer-stage" id="mediaViewerStage"></div>
+    <aside class="media-viewer-aside">
+      <div class="media-viewer-aside-top">
+        <span class="carousel-kicker" id="mediaViewerKicker">BRAND IDENTITY</span>
+        <button class="carousel-arrow media-viewer-close" id="mediaViewerClose" type="button" aria-label="Close full-size view" title="Close full-size view">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <h2 id="mediaViewerTitle">ORYNGE logo</h2>
+      <p class="media-viewer-desc" id="mediaViewerDesc"></p>
+      <div class="media-viewer-controls">
+        <button class="carousel-arrow" id="mediaViewerPrevious" type="button" aria-label="Previous work" title="Previous work">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <span class="carousel-count" id="mediaViewerCount">01 / 09</span>
+        <button class="carousel-arrow" id="mediaViewerNext" type="button" aria-label="Next work" title="Next work">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </aside>
+  </div>
+</dialog>
+
+<footer role="contentinfo">
+2026 ORYNGE | Princess Anasyl Y. Pama.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
